@@ -1,0 +1,15 @@
+*.[oa]
+*~
+TreeAnalysis2012/WJets/HistoFiles/*.rooti
+TreeAnalysis2012/WJets/HistoFiles*
+TreeAnalysis2012/WJets/PNGFiles/*
+TreeAnalysis2012/WJets/RooUnfold/libRooUnfold.rootmap
+TreeAnalysis2012/WJets/RooUnfold/tmp
+TreeAnalysis2012/WJets/RooUnfold/tmp/linuxx8664gcc/Roo*
+TreeAnalysis2012/DataW_*
+*.so
+*.d
+*.log
+*.swp
+*.DS_Store
+
