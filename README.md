@@ -1,1 +1,33 @@
 # WJets13TevGenSyst
+The instructions for running the W+jets analysis code on ntuples to get theoretical systematic uncertainties.
+(PDF set, alpha_s, and scale variations.
+Apichart Hortiantham (11.Sep.2017)
+
+mkdir WJets13TeV_GenTest
+cd WJets13TeV_GenTest
+cmsrel CMSSW_5_3_20  
+cd CMSSW_5_3_20/src
+cmsenv 
+
+-- Clone /WJetsTreeAnalysis from the github
+git clone https://github.com/ahortian/WJets13TevGenSyst.git
+
+
+-- Go to the directory 
+cd WJets13TevGenSyst/TreeAnalysis2012/WJets
+
+-- Compile RooUnfold
+cd RooUnfold
+make clean
+make
+cd -
+
+-- set link
+cd ..
+ln -s /eos/cms/store/user/ahortian/WJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/WJets13Tev_amcnlo_Syst/170124_034044/0000 DataW_AMCNLO
+cd -
+ 
+-- Ready to run the code!!! 
+
+-- Run the code under /WJets
+root -b -q runDYJets.cc++
