@@ -1,6 +1,5 @@
 # WJets13TevGenSyst
-The instructions for running the W+jets analysis code on ntuples to get theoretical systematic uncertainties
-(PDF set, alpha_s, and scale variations).
+The instructions for running the W+jets analysis code on ntuples to get theoretical systematic uncertainties (PDF set, alpha_s, and scale variations).
 Apichart Hortiantham (11.Sep.2017)
 
 mkdir WJets13TeV_GenTest
@@ -9,7 +8,7 @@ cmsrel CMSSW_5_3_20
 cd CMSSW_5_3_20/src
 cmsenv 
 
--- Clone /WJetsTreeAnalysis from the github
+-- Clone /WJets13TevGenSyst from the github
 git clone https://github.com/ahortian/WJets13TevGenSyst.git
 
 -- Go to the directory 
